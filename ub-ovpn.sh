@@ -638,7 +638,7 @@ install_rclocal(){
 	dos2unix /etc/ubuntu
     chmod +x /etc/ubuntu
 	screen -dmS socks python /etc/ubuntu
-	wget --no-check-certificate https://raw.githubusercontent.com/AmiaClaire/wget/main/criz-rc -O /etc/systemd/system/rc-local.service
+	wget --no-check-certificate https://raw.githubusercontent.com/xD-cRiz/hiro-ovpn/main/criz-rc -O /etc/systemd/system/rc-local.service
 	chmod +x /etc/systemd/system/rc-local.service
     echo "#!/bin/sh -e
 iptables-restore < /etc/iptables_rules.v4
