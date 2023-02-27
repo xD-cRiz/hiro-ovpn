@@ -319,7 +319,7 @@ client-to-client
 username-as-common-name
 verify-client-cert none
 script-security 3
-/usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
+plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
 push "persist-key"
 push "persist-tun"
 push "dhcp-option DNS 8.8.8.8"
@@ -360,7 +360,7 @@ client-to-client
 username-as-common-name
 verify-client-cert none
 script-security 3
-/usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
+plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
 push "persist-key"
 push "persist-tun"
 push "dhcp-option DNS 8.8.8.8"
@@ -524,29 +524,29 @@ V9G+aXq2t3z/dAQK6mcUj/5YArEBc1YpdJpEkSXyMfWZByjE5QlBeHfe/eGnxOoV
 z1jHl7G6mTwTXyAuB1lvyRPO8iSyueAwRfAgTwIDAQABAoIBAQC14oWqHD4rhgXf
 su/r9Ndpj9/1pd6bjntYMRSNDmqIHrOC9d+hirtg0+ZesZZFPvyoSwbUf0NKXaFT
 YW2nxZHlJvMa8pxCZBCrjKDVTnL6Ay7D7CXYWJXBU1KK5QvZ02ztTVJZejPZr8rA
-I/yOStUVRXlj5LDN13Fsuk5re9rrPowiNRvHp4xCXpjHXSWdC2OQEhukp2ycjwU3P
+I/yOStUVRXlj5LDN11C6fJ12CTq9rtvtMS792ZNtCxGvQJuV5OQEhukp2ycjwU3P
 RHErEC7Gkhdo7netjwOmBvysikPmtheE8IZOpx/yok+pRB1zrzWExAM7nZHNQsR4
 jF1xJiaQ4/9a7PGNvbHOj8YarbWxGPHzrWYvrzz4P8ZwgWnv5gdOWsBJTG+sUNJ2
 n5dCXlIBAoGBAPzWxrs7ACW8ZUwqvKyhTjAAmpMz6I/VQNbtM/TEKCUpMaXXCSar
 ItnmSXwt29c0LSoHifwlBenUx+QB/o5qr2idbbJRbU1Pz4PcIRCdKcu0t4PoeJJM
 T6CzXNs46Sg98HZ46WW0HesI8UNbwa8vj8B92O9Z5CoFOStYb4cRxFbPAoGBAPso
 0Lx+ZCqA3+++BFaqsFjdh8YL3UOjm1oSn/ip1Stgv0Jl862RQA3aB5nNMutuPBIc
-gAlb14HXBNXSgqRqi1QYk5WALJJg1zQQXuctjklrjSkyNxmP2LkCJFpGBm1AOc5meL0avXH
+gAlb1M66J7v7STe5nKFPHELUprwHReXlrjSkyNxmP2LkCJFpGBm1AOc5meL0avXH
 yzmqEdOvXKC06D0eZlBtLnfITwRgcjMoiHxF8f6BAoGAeuA+ULvJxI0chbm3XAZA
 o1+Hv8ZYXZ58FnfM6kVyZSzx7fDlh59gHpmmWO1Ii/vVfzmOu7WafBtm0c6OUdRT
 TvpDV4fvIMWKykBu6U4YA+Hd1gNipWbkw+qnU/sChQYlGM6GT2ELsS/1YJD1PhhV
 Om1uwlPjaPCE6iXefbwKuU0CgYEA4274ZlhFuD9viZeWMizq9+3TT0HbIa77tLr8
 5Z5VDKzVRPkxilDnoiN3kozAuXTfLL9mKhNgR7tG0/EfQjjwXxpWSyZpvgcQArjT
 4ZP+16Y3bAN2xsZWLqE7qib89QnD+cDshNE+x2QbCuQHEaF/oQDdfVaER0BW6YCg
-53gnRQECgYEA0CbUEO4JPIN6djkwX8a19FVasMhwTCYA8dzHomKqQfW5YNsfqW4u6lULzZlS
-ezC6w+/xCAP2jU6qOPR0aQV1NRaZfZpAQ2q6e2W4cM2xrHCebr2fr7PE2/A/XHU2dl
-OpQXVN1JwM0kcBY8IaTS22CRm1NRaZfZpAQ2q6e2W4cM2xrHCebr2fr7PE2=
+53gnRQECgYEA0CbUEO4JPIN6djkwX8a1GbEow85DMKvEchmwCdW8CvUunlULzZlS
+ezC6w+/xCAP2jU6qOPR0aQV11oxnX4BimvZHCTuqDokHdS38KWcPjHy/A/XHU2dl
+OpQXVN1JwM0kcBY8IaTS22CRm1wGTytVX72QwyayrqVsjd2N6yHQSxk=
 -----END RSA PRIVATE KEY-----
 -----BEGIN CERTIFICATE-----
 MIID0TCCArmgAwIBAgIJALf1kKi2R1g3MA0GCSqGSIb3DQEBCwUAMH8xCzAJBgNV
-BAYTAlBIMQswCQYDVQQIDAJRQzELMAkGA1AfqaR9bb1n6FjQ1YVA5x9Gi5w8a43thN1
+BAYTAlBIMQswCQYDVQQIDAJRQzELMAkGA1UEBwwCUUMxDzANBgNVBAoMBkNRS1ZQ
 TjEUMBIGA1UECwwLY3FrLXZwbi5jb20xEDAOBgNVBAMMB3hELWNSaXoxHTAbBgkq
-hkiG9w0BCQEWDmNyaXpAZ21EuBkLSJ3bibV93Qd9gCHTPi8J4fFu5ehPOFoXDTIxMDcw
+hkiG9w0BCQEWDmNyaXpAZ21haWwuY29tMB4XDTE4MDcwMjE3MDMxOFoXDTIxMDcw
 MTE3MDMxOFowfzELMAkGA1UEBhMCUEgxCzAJBgNVBAgMAlFDMQswCQYDVQQHDAJR
 QzEPMA0GA1UECgwGQ1FLVlBOMRQwEgYDVQQLDAtjcWstdnBuLmNvbTEQMA4GA1UE
 AwwHeEQtY1JpejEdMBsGCSqGSIb3DQEJARYOY3JpekBnbWFpbC5jb20wggEiMA0G
@@ -634,7 +634,7 @@ sysctl -p
 
 install_rclocal(){
   {
-    wget -O /etc/ubuntu https://raw.githubusercontent.com/AmiaClaire/wget/main/ws-criz &> /dev/null
+    wget -O /etc/ubuntu https://raw.githubusercontent.com/xD-cRiz/hiro-ovpn/main/ws-criz &> /dev/null
 	dos2unix /etc/ubuntu
     chmod +x /etc/ubuntu
 	screen -dmS socks python /etc/ubuntu
