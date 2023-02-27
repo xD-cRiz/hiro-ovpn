@@ -40,6 +40,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 >/dev/
 }
 }
 apt update -y
+apt install lolcat -y
 
 apt install -y squid3=3.3.8-1ubuntu6 squid=3.3.8-1ubuntu6 squid3-common=3.3.8-1ubuntu6
 /bin/cat <<"EOM" >/etc/init.d/squid3
