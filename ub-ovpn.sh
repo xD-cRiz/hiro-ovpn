@@ -374,26 +374,18 @@ verb 3' > /etc/openvpn/server2.conf
 
 cat << EOF > /etc/openvpn/easy-rsa/keys/ca.crt
 -----BEGIN CERTIFICATE-----
-MIIDljCCAv+gAwIBAgIJANCSvxmI6CTbMA0GCSqGSIb3DQEBBQUAMIGPMQswCQYD
-VQQGEwJQSDEUMBIGA1UECBMLUXVlem9uIENpdHkxEzARBgNVBAcTCk5vdmFsaWNo
-ZXMxFDASBgNVBAoTC0NyaXogUm9tZXJvMRcwFQYDVQQDEw5Dcml6IFJvbWVybyBD
-QTEmMCQGCSqGSIb36imxTKN5PetbWHULZ8JiRrxjMevYrgmHh0BnbWFpbC5jb20wHhcNMTgw
-MTE2MDkzMzAwWhcNMjgwMTE0MDkzMzAwWjCBjzELMAkGA1UEBhMCUEgxFDASBgNV
-BAgTC14HXBNXSgqRqi1QYk5WALJJg1zQQXuctjkOb3ZhbGljaGVzMRQwEgYDVQQKEwtD
-cml6IFJvbWVybzEXMBUGA1UEAxMOQ3JpeiBSb21lcm8gQ0ExJjAkBgkqhkiG9w0B
-CQEWF2NyaXp0YW5yb21lcm9AZ21haWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GN
-ADCBiQKBgQCfJ3HQjwhA++d3d99zaev2Ta0yZHWSQDzslJdFFVE2oe5SN1F9vWvY
-qkaEW7RbTspvL4xEdK3VjvykrfD90HJxykGmbVl/Uy5Exxu59f8g+UWJ4vcoSwGa
-JqWNQpNfLf7KRUdLcDjlbNmAkQCDVjSV/Qecjk8hozWcA5Hsq79jpwIDAQABo4H3
-MIH0MB0GA1UdDgQWBBROijK153u1pIMYAYDeQYDlCMc+WjCBxAYDVR0jBIG8MIG5
-gBROijK153u1pIMYAYDeQYDlCMc+WqGBlaSBkjCBjzELMAkGA1UEBhMCUEgxFDAS
-BgNVBAgTC189VmrDcs3Y261RvbE2DMvZqvb95JrjrisOb3ZhbGljaGVzMRQwEgYDVQQK
-EwtDcml6IFJvbWVybzEXMBUGA1UEAxMOQ3JpeiBSb21lcm8gQ0ExJjAkBgkqhkiG
-9w0BCQEWF2NyaXp0YW5yb21lcm9AZ21haWwuY29tggkA0JK/GYjoJNswDAYDVR0T
-BAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQATuwx5OO3EiSaswG06GZu+Hcxj2pNt
-sCenDElWHH+XO/mEG5mSWsEgcYADfLCy7asle66oziZd1Silf2pc/tZ+oymcRa7p
-cGlR4YVIkEADk6MhbIgHUIKeaFtE34+dwss/o4peVdFPghXpsrcdDn0hd7vr1Ux7
-uuRjFK0H+G6kmg==
+MIICMTCCAZqgAwIBAgIUAaQBApMS2dYBqYPcA3Pa7cjjw7cwDQYJKoZIhvcNAQEL
+BQAwDzENMAsGA1UEAwwES29iWjAeFw0yMDA3MjIyMjIzMzNaFw0zMDA3MjAyMjIz
+MzNaMA8xDTALBgNVBAMMBEtvYlowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB
+AMF46UVi2O5pZpddOPyzU2EyIrr8NrpXqs8BlYhUjxOcCrkMjFu2G9hk7QIZ4qO0
+GWVZpPhYk5qWk+LxCsryrSoe0a5HaqIye8BFJmXV0k+O/3e6k06UGNii3gxBWQpF
+7r/2CyQLus9OSpQPYszByBvtkwiBAo/V98jdpm+EVu6tAgMBAAGjgYkwgYYwHQYD
+VR0OBBYEFGRJMm/+ZmLxV027kahdvSY+UaTSMEoGA1UdIwRDMEGAFGRJMm/+ZmLx
+V027kahdvSY+UaTSoROkETAPMQ0wCwYDVQQDDARLb2JaghQBpAECkxLZ1gGpg9wD
+c9rtyOPDtzAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsF
+AAOBgQC0f8wb5hyEOEEX64l8QCNpyd/WLjoeE5bE+xnIcKE+XpEoDRZwugLoyQdc
+HKa3aRHNqKpR7H696XJReo4+pocDeyj7rATbO5dZmSMNmMzbsjQeXux0XjwmZIHu
+eDKMefDi0ZfiZmnU2njmTncyZKxv18Ikjws0Myc8PtAxy2qdcA==
 -----END CERTIFICATE-----
 EOF
 
@@ -401,104 +393,93 @@ cat << EOF > /etc/openvpn/easy-rsa/keys/server.crt
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 1 (0x1)
-    Signature Algorithm: sha1WithRSAEncryption
-        Issuer: C=PH, ST=Quezon City, L=Novaliches, O=Criz Romero, CN=Criz Romero CA/emailAddress=criztanromero@gmail.com
+        Serial Number:
+            40:26:da:91:18:2b:77:9c:85:6a:0c:bb:ca:90:53:fe
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=KobZ
         Validity
-            Not Before: Jan 16 09:33:43 2018 GMT
-            Not After : Jan 14 09:33:43 2028 GMT
-        Subject: C=PH, ST=Quezon City, L=Novaliches, O=Criz Romero, CN=server/emailAddress=criztanromero@gmail.com
+            Not Before: Jul 22 22:23:55 2020 GMT
+            Not After : Jul 20 22:23:55 2030 GMT
+        Subject: CN=server
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
                 Modulus:
-                    00:c7:0f:e9:90:17:ab:99:11:e7:2f:83:b0:d5:15:
-                    da:7c:de:61:63:75:59:34:02:ec:fa:6d:d3:a4:51:
-                    ce:b9:21:0a:41:65:68:45:c1:b2:46:c5:f0:f2:db:
-                    83:78:93:f5:94:14:01:f4:57:0b:c7:6d:d5:21:36:
-                    20:7a:fe:df:2d:78:fa:8f:2e:59:2c:26:4a:e2:5e:
-                    b5:c8:ec:e1:e2:0d:3c:3b:0d:d5:b6:c6:0a:c6:69:
-                    76:fe:01:bf:f3:26:7e:a6:82:49:ba:6c:8f:4b:88:
-                    83:ac:07:5d:dc:f7:db:8e:67:46:c4:b9:67:dc:60:
-                    40:5f:07:dd:1b:73:6f:62:53
+                    00:ce:35:23:d8:5d:9f:b6:9b:cb:6a:89:e1:90:af:
+                    42:df:5f:f8:bd:ad:a7:78:9a:ca:20:f0:3d:5b:d6:
+                    c9:ef:4c:4a:99:96:c3:38:fd:59:b4:d7:65:ed:d4:
+                    a7:fa:ab:03:e2:be:88:2f:ca:fc:90:dd:b0:b7:bc:
+                    23:cb:83:ac:36:e2:01:57:69:64:b8:e1:9e:51:f0:
+                    a6:9d:13:d9:92:6b:4d:04:a6:10:64:a3:3f:6b:ff:
+                    fe:32:ac:91:63:c2:71:24:be:9e:76:4f:87:cc:3a:
+                    03:a1:9e:48:3f:11:92:33:3b:19:16:9c:d0:5d:16:
+                    ee:c1:42:67:99:47:66:67:67
                 Exponent: 65537 (0x10001)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:FALSE
-            Netscape Cert Type: 
-                SSL Server
-            Netscape Comment: 
-                Easy-RSA Generated Server Certificate
             X509v3 Subject Key Identifier: 
-                57:6A:F0:53:64:4D:7C:32:76:50:15:D4:4A:F1:F2:EA:19:90:46:6D
+                6B:08:C0:64:10:71:A8:32:7F:0B:FE:1E:98:1F:BD:72:74:0F:C8:66
             X509v3 Authority Key Identifier: 
-                keyid:4E:8A:32:B5:E7:7B:B5:A4:83:18:01:80:DE:41:80:E5:08:C7:3E:5A
-                DirName:/C=PH/ST=Quezon City/L=Novaliches/O=Criz Romero/CN=Criz Romero CA/emailAddress=criztanromero@gmail.com
-                serial:D0:92:BF:19:88:E8:24:DB
-
+                keyid:64:49:32:6F:FE:66:62:F1:57:4D:BB:91:A8:5D:BD:26:3E:51:A4:D2
+                DirName:/CN=KobZ
+                serial:01:A4:01:02:93:12:D9:D6:01:A9:83:DC:03:73:DA:ED:C8:E3:C3:B7
             X509v3 Extended Key Usage: 
                 TLS Web Server Authentication
             X509v3 Key Usage: 
                 Digital Signature, Key Encipherment
-    Signature Algorithm: sha1WithRSAEncryption
-         11:98:6b:ef:5f:8c:06:b8:9f:07:a4:c5:32:d8:12:a8:67:96:
-         b4:72:a1:65:b5:6d:e8:c8:3b:7e:a3:3b:3c:41:f2:48:92:24:
-         fe:d2:21:c8:11:99:d5:65:a1:cd:3e:b3:3a:f6:fd:c1:b8:71:
-         d0:64:9f:93:3d:b8:0b:af:0f:92:2b:07:40:32:b6:32:4b:8f:
-         9a:49:bb:79:e5:49:2b:5f:3d:f2:ca:a4:39:90:71:19:c3:30:
-         1c:ef:71:aa:72:a1:df:68:fa:25:cb:88:b0:c7:4c:91:ef:2b:
-         2d:95:50:29:d4:cb:59:e9:9c:86:52:66:36:e7:02:73:67:07:
-         9a:d3
+            X509v3 Subject Alternative Name: 
+                DNS:server
+    Signature Algorithm: sha256WithRSAEncryption
+         a1:3e:ac:83:0b:e5:5d:ca:36:b7:d0:ab:d0:d9:73:66:d1:62:
+         88:ce:3d:47:9e:08:0b:a0:5b:51:13:fc:7e:d7:6e:17:0e:bd:
+         f5:d9:a9:d9:06:78:52:88:5a:e5:df:d3:32:22:4a:4b:08:6f:
+         b1:22:80:4f:19:d1:5f:9d:b6:5a:17:f7:ad:70:a9:04:00:ff:
+         fe:84:aa:e1:cb:0e:74:c0:1a:75:0b:3e:98:90:1d:22:ba:a4:
+         7a:26:65:7d:d1:3b:5c:45:a1:77:22:ed:b6:6b:18:a3:c4:ee:
+         3e:06:bb:0b:ec:12:ac:16:a5:50:b3:ed:46:43:87:72:fd:75:
+         8c:38
 -----BEGIN CERTIFICATE-----
-MIID8DCCA1mgAwIBAgIBATANBgkqhkiG9w0BAQUFADCBjzELMAkGA1UEBhMCUEgx
-FDASBgNVBAgTC19FVasMhwTCYA8dzHomKqQfW5YNsfqW4u6Ob3ZhbGljaGVzMRQwEgYD
-VQQKEwtDcml6IFJvbWVybzEXMBUGA1UEAxMOQ3JpeiBSb21lcm8gQ0ExJjAkBgkq
-hkiG9w0BCQEWF2NyaXp0YW5yb21lcm9AZ213o892f2AznkmhLvJLA2JKyPMvx5Evi7g30
-M1oXDTI4MDExNDA5MzM0M1owgYcxCzAJBgNVBAYTAlBIMRQwEgYDVQQIEwtRdWV6
-b24gQ2l0eTETMBEGA1UEBxMKTm92YWxpY2hlczEUMBIGA1UEChMLQ3JpeiBSb21l
-cm8xDzANBgNVBAMTBnNlcnZlcjEmMCQGCSqGSIb3Cm4HTdRoJrRt6G2cKCLEaobwUBcuzkYjU
-b0BnbWFpbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMcP6ZAXq5kR
-5y+DsNUV2nzeYWN1WTQC7Ppt06RRzrkhCkFlaEXBskbF8PLbg3iT9ZQUAfRXC8dt
-1SE2IHr+3y14+o8uWSwmSuJetcjs4eINPDsN1bbGCsZpdv4Bv/MmfqaCSbpsj0uI
-g6wHXdz36imxTKN5PetbWHULZ8JiRrxjMevYrgmHhIIBXDAJBgNVHRMEAjAA
-MBEGCWCGSAGG+EIBAQQEAwIGQDA0BglghkgBhvhCAQ0EJxYlRWFzeS1SU0EgR2Vu
-ZXJhdGVkIFNlcnZlciBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUV2rwU2RNfDJ2UBXU
-SvHy6hmQRm0wgcQGA1UdIwSBvDCBuYAUTooyted7taSDGAGA3kGA5QjHPlqhgZWk
-gZIwgY8xCzAJBgNVBAYTAlBIMRQwEgYDVQQIEwtRdWV6b24gQ2l0eTETMBEGA1UE
-BxMKTm92YWxpY2hlczEUMBIGA1UEChMLQ3JpeiBSb21lcm8xFzAVBgNVBAMTDkNy
-aXogUm9tZXJvIENBMSYwJAYJKoZIhvcNAQkBFhdjcml6dGFucm9tZXJvQGdtYWls
-LmNvbYIJANCSvxmI6CTbMBMGA1JZxxKaz1soSt1rmyksh1gZmPttBSwDVe6IF
-oDANBgkqhkiG9w0BAQUFAAOBgQARmGvvX4wGuJ8HpMUy2BKoZ5a0cqFltW3oyDt+
-ozs8QfJIkiT+0iHIEZnVZaHNPrM69v3BuHHQZJ+TPbgLrw+SKwdAMrYyS4+aSbt5
-5UkrXz3Cm4HTdRoJrRt6G2cKCLEaobwUBcuzkYjUly4iwx0yR7ystlVAp1MtZ6ZyGUmY25wJz
-Zwea0w==
+MIICVDCCAb2gAwIBAgIQQCbakRgrd5yFagy7ypBT/jANBgkqhkiG9w0BAQsFADAP
+MQ0wCwYDVQQDDARLb2JaMB4XDTIwMDcyMjIyMjM1NVoXDTMwMDcyMDIyMjM1NVow
+ETEPMA0GA1UEAwwGc2VydmVyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO
+NSPYXZ+2m8tqieGQr0LfX/i9rad4msog8D1b1snvTEqZlsM4/Vm012Xt1Kf6qwPi
+vogvyvyQ3bC3vCPLg6w24gFXaWS44Z5R8KadE9mSa00EphBkoz9r//4yrJFjwnEk
+vp52T4fMOgOhnkg/EZIzOxkWnNBdFu7BQmeZR2ZnZwIDAQABo4GuMIGrMAkGA1Ud
+EwQCMAAwHQYDVR0OBBYEFGsIwGQQcagyfwv+HpgfvXJ0D8hmMEoGA1UdIwRDMEGA
+FGRJMm/+ZmLxV027kahdvSY+UaTSoROkETAPMQ0wCwYDVQQDDARLb2JaghQBpAEC
+kxLZ1gGpg9wDc9rtyOPDtzATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMC
+BaAwEQYDVR0RBAowCIIGc2VydmVyMA0GCSqGSIb3DQEBCwUAA4GBAKE+rIML5V3K
+NrfQq9DZc2bRYojOPUeeCAugW1ET/H7XbhcOvfXZqdkGeFKIWuXf0zIiSksIb7Ei
+gE8Z0V+dtloX961wqQQA//6EquHLDnTAGnULPpiQHSK6pHomZX3RO1xFoXci7bZr
+GKPE7j4GuwvsEqwWpVCz7UZDh3L9dYw4
 -----END CERTIFICATE-----
 EOF
 
 cat << EOF > /etc/openvpn/easy-rsa/keys/server.key
 -----BEGIN PRIVATE KEY-----
-MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMcP6ZAXq5kR5y+D
-sNUV2nzeYWN1WTQC7Ppt06RRzrkhCkFlaEXBskbF8PLbg3iT9ZQUAfRXC8dt1SE2
-IHr+3y14+o8uWSwmSuJetcjs4eINPDsN1bbGCsZpdv4Bv/MmfqaCSbpsj0uIg6wH
-Xdz3D8WcMtdfW8veJJGPe1xaRRsDfzxtXKKFilZnbTlNb9rAywWH5S1TvB
-EnLwDGD9O/0GTUuNfcNG+W+2EsDjnYhl5RGjeKOlFJoYoZAf7swdZ+j96l/5dp0o
-V+qEoXvzbdafC2arCrNMPRWEYkAe+kcyFON1//Ib6fXxFSCRgqmm0EiTaKcNo23E
-/3LVvMZvcpDw7mR4WQJBAOT7Nbwalfm3bLRa0PhROgWfzQPb7TuZGTQyHwO8UCMw
-zjl/3Xz0tL8LEKrDw29V3g5vEesMyqOcqttrFzyVLgcCQQDejPEFsgtnkuZ2IdbJ
-wwEUQsQ8jpydZnlsqp/XQ9WvbI8iMvizfdxVCQg6pMHfR3yOMnjEhuettX9zIa2P
-2ZZVAkAmrJs1yxO7mpRcnd4forB3FLduyG14HHKaU0DTw7GRUAP0yDjjiv0gK0FE
-Zk4S9uDLdU0EcyOioKpm5t6E1/lvAkEAw9wMXnPUH6IkGwEq88Qf1gHwjE8CPHAs
-GtuK8rtrewiya2mqgOUanOfnCx1m1icm0kpPCL6ldLZP5TZVdk0LRQJBAIqDC19X
-0UbVlvXIq+gUgkumM/uG/Rkl1mudocUGWcOiC5bEq/d31fadU9ymFhVAcKsE7AHx
-3sTf1uNv2z3sg/g=
+MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAM41I9hdn7aby2qJ
+4ZCvQt9f+L2tp3iayiDwPVvWye9MSpmWwzj9WbTXZe3Up/qrA+K+iC/K/JDdsLe8
+I8uDrDbiAVdpZLjhnlHwpp0T2ZJrTQSmEGSjP2v//jKskWPCcSS+nnZPh8w6A6Ge
+SD8RkjM7GRac0F0W7sFCZ5lHZmdnAgMBAAECgYAFNrC+UresDUpaWjwaxWOidDG8
+0fwu/3Lm3Ewg21BlvX8RXQ94jGdNPDj2h27r1pEVlY2p767tFr3WF2qsRZsACJpI
+qO1BaSbmhek6H++Fw3M4Y/YY+JD+t1eEBjJMa+DR5i8Vx3AE8XOdTXmkl/xK4jaB
+EmLYA7POyK+xaDCeEQJBAPJadiYd3k9OeOaOMIX+StCs9OIMniRz+090AJZK4CMd
+jiOJv0mbRy945D/TkcqoFhhScrke9qhgZbgFj11VbDkCQQDZ0aKBPiZdvDMjx8WE
+y7jaltEDINTCxzmjEBZSeqNr14/2PG0X4GkBL6AAOLjEYgXiIvwfpoYE6IIWl3re
+ebCfAkAHxPimrixzVGux0HsjwIw7dl//YzIqrwEugeSG7O2Ukpz87KySOoUks3Z1
+yV2SJqNWskX1Q1Xa/gQkyyDWeCeZAkAbyDBI+ctc8082hhl8WZunTcs08fARM+X3
+FWszc+76J1F2X7iubfIWs6Ndw95VNgd4E2xDATNg1uMYzJNgYvcTAkBoE8o3rKkp
+em2n0WtGh6uXI9IC29tTQGr3jtxLckN/l9KsJ4gabbeKNoes74zdena1tRdfGqUG
+JQbf7qSE3mg2
 -----END PRIVATE KEY-----
 EOF
 
 cat << EOF > /etc/openvpn/easy-rsa/keys/dh2048.pem
 -----BEGIN DH PARAMETERS-----
-MIGHAoGBAP69YIQHcKykberMr8M2dBR4B9hFdVxlb3mjeyQEWJmkKITJtL05PzP0
-P4bOlv3fJdOeWYDVFqBKQ8fHQKOc2Q4okuWxXO+9sWGDroBpeBKo/1AH/V8w6Y7A
-JGbGJleAFk+g73zfMAuEeQ0xLm3tfvbN5tgS8G1wnO/OBYdKGVV7AgEC
+MIGHAoGBAKqeBUWMYdj6+Z6kPVyQjm5Pc/nhSeczplV0AX/zJ5lL9TXRGNg+q/nK
+tQyaBpmBWAHxHP8j7NmRQaN6rpBkqHOtXJB9FT35xDvnAAaMxYW5RetBRUW7UnJ3
+s1qQZ6kAUwIgDHzS9ykP9IzKPTbCrMIA/8kHfJ1qMfSDY8slKSVjAgEC
 -----END DH PARAMETERS-----
 EOF
 
