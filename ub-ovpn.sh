@@ -667,7 +667,6 @@ install_done()
 
 vps_ip=$(curl -s https://api.ipify.org)
 
-
 install_require
 install_squid
 install_openvpn
